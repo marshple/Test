@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Prediction Market Summary</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Daily Prediction Market Summary</h1>
+        <p class="subhead">Top markets from Polymarket + Kalshi, refreshed on demand.</p>
+      </header>
+
+      <section class="actions">
+        <button id="refreshBtn">Refresh summary</button>
+        <p id="timestamp"></p>
+      </section>
+
+      <section class="card">
+        <h2>Highlights</h2>
+        <ul id="highlights"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Top Markets</h2>
+        <p id="errors" class="errors"></p>
+        <div id="markets" class="markets"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
